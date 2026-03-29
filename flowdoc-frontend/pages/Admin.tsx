@@ -48,7 +48,7 @@ export default function Admin() {
 				<p className="text-gray-500">Ładowanie danych...</p>
 			) : isError ? (
 				<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
-					<strong>Błąd autoryzacji: </strong> {error.message}
+					{error.message}
 				</div>
 			) : orders.length === 0 ? (
 				<p className="text-gray-500">Brak zamówień w systemie.</p>
