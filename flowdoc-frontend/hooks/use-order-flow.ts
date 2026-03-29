@@ -31,7 +31,7 @@ export function useOrderFlow() {
 		setIsLoading(true);
 
 		try {
-			const response = await fetch("http://localhost:4000/orders", {
+			const response = await fetch(`${import.meta.env.VITE_API_URL}/orders`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

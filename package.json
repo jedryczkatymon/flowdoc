@@ -1,12 +1,12 @@
 {
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "prisma",
-      "@prisma/engines",
-      "esbuild"
-    ]
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.4.9"
-  }
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"prisma",
+			"@prisma/engines",
+			"esbuild"
+		]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.9"
+	}
 }

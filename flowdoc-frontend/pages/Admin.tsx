@@ -20,7 +20,7 @@ export default function Admin() {
 	} = useQuery<OrderWithItems[]>({
 		queryKey: ["orders"],
 		queryFn: async () => {
-			const res = await fetch("http://localhost:4000/admin/orders", {
+			const res = await fetch(`${import.meta.env.VITE_API_URL}/admin/orders`, {
 				headers: {
 					"x-admin-token": "supersecretadmintoken123",
 				},
